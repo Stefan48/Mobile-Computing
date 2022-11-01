@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PracticalTest01MainActivity">
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navigate_to_secondary_activity"
+        android:layout_gravity="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp">
+
+            <EditText
+                android:id="@+id/first_button_clicks_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_0"
+                android:textAlignment="center"
+                android:saveEnabled="false"
+                android:inputType="none"
+                android:focusable="false"/>
+
+            <Button
+                android:id="@+id/first_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/press_me"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp">
+
+            <EditText
+                android:id="@+id/second_button_clicks_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_0"
+                android:textAlignment="center"
+                android:saveEnabled="false"
+                android:inputType="none"
+                android:focusable="false"/>
+
+            <Button
+                android:id="@+id/second_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/press_me_too" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
